@@ -1,0 +1,1 @@
+export { Calculadora } from "./calculadora/calculadora.screen";

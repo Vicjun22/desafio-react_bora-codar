@@ -1,0 +1,22 @@
+export const ordemDosBotoes = [
+    {"id": 0, "valor": "CE", "tipoDoBotao": 2},
+    {"id": 1, "valor": "C", "tipoDoBotao": 1},
+    {"id": 2, "valor": "percentual", "tipoDoBotao": 1},
+    {"id": 3, "valor": "dividir", "tipoDoBotao": 3},
+    {"id": 4, "valor": "7", "tipoDoBotao": 1},
+    {"id": 5, "valor": "8", "tipoDoBotao": 1},
+    {"id": 6, "valor": "9", "tipoDoBotao": 1},
+    {"id": 7, "valor": "multiplicar", "tipoDoBotao": 3},
+    {"id": 8, "valor": "4", "tipoDoBotao": 1},
+    {"id": 9, "valor": "5", "tipoDoBotao": 1},
+    {"id": 10, "valor": "6", "tipoDoBotao": 1},
+    {"id": 11, "valor": "subtrair", "tipoDoBotao": 3},
+    {"id": 12, "valor": "1", "tipoDoBotao": 1},
+    {"id": 13, "valor": "2", "tipoDoBotao": 1},
+    {"id": 14, "valor": "3", "tipoDoBotao": 1},
+    {"id": 15, "valor": "somar", "tipoDoBotao": 3},
+    {"id": 16, "valor": "maisMenos", "tipoDoBotao": 1},
+    {"id": 17, "valor": "0", "tipoDoBotao": 1},
+    {"id": 18, "valor": ",", "tipoDoBotao": 1},
+    {"id": 19, "valor": "igual", "tipoDoBotao": 4}
+];

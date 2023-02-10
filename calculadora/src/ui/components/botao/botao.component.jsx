@@ -1,10 +1,10 @@
 import "./botao.style.css"
 
-export function Botao({ botao, operacao }) {
+export function Botao({ valor, estilo }) {
 
     return (
-        <div className="botao">
-            { botao }
+        <div className={ `estilo-${estilo}` }>
+            { valor }
         </div>
     )
 }
