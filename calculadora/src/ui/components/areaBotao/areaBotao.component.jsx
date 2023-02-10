@@ -7,7 +7,7 @@ export function AreaBotao({ informacoesDosBotoes }) {
     const botao = informacoesDosBotoes.map(botao => {
 
         return (
-            <Botao key={botao.id} valor={botao.valor} estilo={botao.tipoDoBotao} />
+            <Botao key={botao.id} valor={botao.valor} estilo={botao.estiloDoBotao} />
         )
     })
 
