@@ -12,6 +12,7 @@
   color: #ebebeb;
   font-size: 26px;
 
+  border: none;
   border-radius: 100%;
   box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04),
     0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26),
@@ -53,4 +54,19 @@
       rgba(255, 255, 255, 0.05) 100%
     ),
     #7f45e2;
+}
+
+.estilo-1:hover,
+.estilo-2:hover,
+.estilo-3:hover,
+.estilo-4:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+.estilo-1:active,
+.estilo-2:active,
+.estilo-3:active,
+.estilo-4:active {
+  filter: brightness(50%);
 }
