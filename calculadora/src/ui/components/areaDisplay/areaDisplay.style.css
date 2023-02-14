@@ -15,6 +15,8 @@
     font-size: large;
     text-align: end;
 
+    overflow: hidden;
+
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -26,8 +28,4 @@
 
     display: flex;
     justify-content: space-between;
-}
-
-.area-resposta span {
-    color: #6B6B6B;
 }

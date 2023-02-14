@@ -1,12 +1,16 @@
 import "./areaDisplay.style.css";
 
-export function AreaDisplay() {
+import { OperacaoSelecionada } from "../index";
+
+export function AreaDisplay({ estado, dadosBotaoSelecionado }) {
+
   return (
     <div className="area-display">
-      <div className="area-calculo">5 + 5</div>
+      <div className="area-calculo">{estado.valorDoDisplay}</div>
+
       <div className="area-resposta">
-        <span>=</span>
-        10
+        <OperacaoSelecionada dadosBotaoSelecionado={dadosBotaoSelecionado} />
+        <span>{estado?.valorDoDisplay || "0"}</span>
       </div>
     </div>
   );
