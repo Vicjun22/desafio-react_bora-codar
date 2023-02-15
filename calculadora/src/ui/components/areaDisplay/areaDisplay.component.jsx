@@ -10,7 +10,7 @@ export function AreaDisplay({ estado, dadosBotaoSelecionado }) {
 
       <div className="area-resposta">
         <OperacaoSelecionada dadosBotaoSelecionado={dadosBotaoSelecionado} />
-        <span>{estado?.valorDoDisplay || "0"}</span>
+        <span>{estado?.valorNoDisplay || "0"}</span>
       </div>
     </div>
   );

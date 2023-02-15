@@ -1,11 +1,10 @@
-import './app.css';
+import './App.css';
 
 import { Calculadora } from "./ui/screens/index";
 
 export function App() {
-
   return (
-    <div className="app">
+    <div className="App">
       <Calculadora />
     </div>
   );

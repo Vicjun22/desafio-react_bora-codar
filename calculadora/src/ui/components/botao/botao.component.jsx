@@ -8,43 +8,17 @@ import Plus from "../../../assets/icons/Plus.svg";
 import Equals from "../../../assets/icons/Equals.svg";
 import PlusMinus from "../../../assets/icons/PlusMinus.svg";
 
-import { valorInicial } from "../../../utils/valorInicialDisplay";
+import { limparMemoria } from "../../../utils/limparMemoria";
+import { adicionarDigito } from "../../../utils/adicionarDigito";
 
 export function Botao({
-  estado,
-  setEstado,
-  valor,
-  estilo,
   tipo,
+  valor,
+  estado,
+  estilo,
+  setEstado,
   setDadosBotaoSelecionado,
 }) {
-  function limparMemoria() {
-    setEstado({ ...valorInicial })
-  }
-
-  function adicionarDigito(valor) {
-    if (valor === "." && estado?.valorDoDisplay?.includes(".")) {
-      return;
-    }
-    if (estado?.valorDoDisplay?.length > 5) {
-      return;
-    }
-
-    const limparDisplay = estado?.valorDoDisplay === 0 || estado?.limparDisplay || estado?.valorDoDisplay === '0';
-    const valorAtual = limparDisplay ? "" : estado?.valorDoDisplay;
-    const valorDoDisplay = valorAtual + valor;
-    const atualmente = estado?.atualmente
-    setEstado({ valorDoDisplay, limparDisplay: false, atualmente });
-
-    // if (valor !== ".") {
-
-    //   const index = estado?.atualmente;
-    //   const novoValor = parseFloat(valorDoDisplay);
-    //   const valores = [...estado?.valores];
-    //   valores[index] = novoValor;
-    //   setEstado({ valorDoDiplay: estado?.valorDoDiplay, limparDisplay, valores: valores, atualmente });
-    // }
-  }
 
   switch (valor) {
     case "percentual":
@@ -116,20 +90,10 @@ export function Botao({
         </button>
       );
 
-    case ",":
-      return (
-        <button
-          onClick={() => adicionarDigito(tipo)}
-          className={`estilo-${estilo}`}
-        >
-          {valor}
-        </button>
-      );
-
     case "C":
       return (
         <button
-          onClick={() => limparMemoria()}
+          onClick={() => limparMemoria({ setEstado })}
           className={`estilo-${estilo}`}
         >
           {valor}
@@ -139,7 +103,7 @@ export function Botao({
     default:
       return (
         <button
-          onClick={() => adicionarDigito(valor)}
+          onClick={() => adicionarDigito({ valor, estado, setEstado })}
           className={`estilo-${estilo}`}
         >
           {valor}
