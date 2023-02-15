@@ -2,7 +2,7 @@ import "./areaBotao.style.css"
 
 import { Botao } from "../index"
 
-export function AreaBotao({ estado, setEstado, informacoesDosBotoes, setDadosBotaoSelecionado }) {
+export function AreaBotao({ estado, setEstado, informacoesDosBotoes }) {
 
     const botao = informacoesDosBotoes.map(botao => {
 
@@ -10,11 +10,9 @@ export function AreaBotao({ estado, setEstado, informacoesDosBotoes, setDadosBot
             <Botao 
                 key={botao.id}
                 valor={botao.valor}
-                estilo={botao.estiloDoBotao} 
-                tipo={botao.tipoDoBotao}
+                estilo={botao.estiloDoBotao}
                 estado={estado}
                 setEstado={setEstado}
-                setDadosBotaoSelecionado={setDadosBotaoSelecionado}
             />
         )
     })

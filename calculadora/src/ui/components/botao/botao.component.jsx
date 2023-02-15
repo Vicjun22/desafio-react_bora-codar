@@ -8,23 +8,20 @@ import Plus from "../../../assets/icons/Plus.svg";
 import Equals from "../../../assets/icons/Equals.svg";
 import PlusMinus from "../../../assets/icons/PlusMinus.svg";
 
-import { limparMemoria } from "../../../utils/limparMemoria";
-import { adicionarDigito } from "../../../utils/adicionarDigito";
+import { limparMemoria, adicionarDigito, operacao } from "../../../utils/index";
 
 export function Botao({
-  tipo,
   valor,
   estado,
   estilo,
   setEstado,
-  setDadosBotaoSelecionado,
 }) {
 
   switch (valor) {
     case "percentual":
       return (
         <button
-          onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
+          // onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
           className={`estilo-${estilo}`}
         >
           <img src={Percent} alt={valor} />
@@ -34,7 +31,7 @@ export function Botao({
     case "dividir":
       return (
         <button
-          onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
+          onClick={() => operacao({ valor, estado, setEstado })}
           className={`estilo-${estilo}`}
         >
           <img src={Divide} alt={valor} />
@@ -44,7 +41,7 @@ export function Botao({
     case "multiplicar":
       return (
         <button
-          onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
+          onClick={() => operacao({ valor, estado, setEstado })}
           className={`estilo-${estilo}`}
         >
           <img src={X} alt={valor} />
@@ -54,7 +51,7 @@ export function Botao({
     case "subtrair":
       return (
         <button
-          onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
+          onClick={() => operacao({ valor, estado, setEstado })}
           className={`estilo-${estilo}`}
         >
           <img src={Minus} alt={valor} />
@@ -63,7 +60,7 @@ export function Botao({
     case "somar":
       return (
         <button
-          onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
+          onClick={() => operacao({ valor, estado, setEstado })}
           className={`estilo-${estilo}`}
         >
           <img src={Plus} alt={valor} />
@@ -73,7 +70,7 @@ export function Botao({
     case "igual":
       return (
         <button
-          onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
+          onClick={() => operacao({ valor, estado, setEstado })}
           className={`estilo-${estilo}`}
         >
           <img src={Equals} alt={valor} />
@@ -83,7 +80,7 @@ export function Botao({
     case "maisMenos":
       return (
         <button
-          onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
+          // onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
           className={`estilo-${estilo}`}
         >
           <img src={PlusMinus} alt={valor} />

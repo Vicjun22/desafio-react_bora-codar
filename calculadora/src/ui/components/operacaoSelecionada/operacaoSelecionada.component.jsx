@@ -8,15 +8,15 @@ import Plus from "../../../assets/icons/Plus.svg";
 import Equals from "../../../assets/icons/Equals.svg";
 import PlusMinus from "../../../assets/icons/PlusMinus.svg";
 
-export function OperacaoSelecionada({ dadosBotaoSelecionado }) {
-  let operacao = dadosBotaoSelecionado?.valor;
+export function OperacaoSelecionada({ estado }) {
+  let operacao = estado?.operacao;
 
   switch (operacao) {
     case "dividir":
       return (
         <img
           src={Divide}
-          alt={dadosBotaoSelecionado.valor}
+          alt={operacao}
           className="img-operacao-selecionada"
         />
       );
@@ -25,7 +25,7 @@ export function OperacaoSelecionada({ dadosBotaoSelecionado }) {
       return (
         <img
           src={X}
-          alt={dadosBotaoSelecionado.valor}
+          alt={operacao}
           className="img-operacao-selecionada"
         />
       );
@@ -34,7 +34,7 @@ export function OperacaoSelecionada({ dadosBotaoSelecionado }) {
       return (
         <img
           src={Minus}
-          alt={dadosBotaoSelecionado.valor}
+          alt={operacao}
           className="img-operacao-selecionada"
         />
       );
@@ -43,7 +43,7 @@ export function OperacaoSelecionada({ dadosBotaoSelecionado }) {
       return (
         <img
           src={Plus}
-          alt={dadosBotaoSelecionado.valor}
+          alt={operacao}
           className="img-operacao-selecionada"
         />
       );
@@ -52,7 +52,7 @@ export function OperacaoSelecionada({ dadosBotaoSelecionado }) {
       return (
         <img
           src={PlusMinus}
-          alt={dadosBotaoSelecionado.valor}
+          alt={operacao}
           className="img-operacao-selecionada"
         />
       );
@@ -61,7 +61,7 @@ export function OperacaoSelecionada({ dadosBotaoSelecionado }) {
       return (
         <img
           src={Percent}
-          alt={dadosBotaoSelecionado.valor}
+          alt={operacao}
           className="img-operacao-selecionada"
         />
       );
@@ -70,7 +70,7 @@ export function OperacaoSelecionada({ dadosBotaoSelecionado }) {
       return (
         <img
           src={Equals}
-          alt={dadosBotaoSelecionado.valor}
+          alt={operacao}
           className="img-operacao-selecionada"
         />
       );
