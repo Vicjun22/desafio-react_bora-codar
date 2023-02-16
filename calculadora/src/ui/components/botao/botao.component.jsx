@@ -8,20 +8,21 @@ import Plus from "../../../assets/icons/Plus.svg";
 import Equals from "../../../assets/icons/Equals.svg";
 import PlusMinus from "../../../assets/icons/PlusMinus.svg";
 
-import { limparMemoria, adicionarDigito, operacao } from "../../../utils/index";
+import {
+  limparMemoria,
+  adicionarDigito,
+  operacao,
+  trocarSinal,
+  limparArrayDaMemoria,
+  operacaoPercentual,
+} from "../../../utils/index";
 
-export function Botao({
-  valor,
-  estado,
-  estilo,
-  setEstado,
-}) {
-
+export function Botao({ valor, estado, estilo, setEstado }) {
   switch (valor) {
     case "percentual":
       return (
         <button
-          // onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
+          onClick={() => operacaoPercentual({ estado, setEstado })}
           className={`estilo-${estilo}`}
         >
           <img src={Percent} alt={valor} />
@@ -80,7 +81,7 @@ export function Botao({
     case "maisMenos":
       return (
         <button
-          // onClick={() => setDadosBotaoSelecionado({ tipo: tipo, valor: valor })}
+          onClick={() => trocarSinal({ estado, setEstado })}
           className={`estilo-${estilo}`}
         >
           <img src={PlusMinus} alt={valor} />
@@ -91,6 +92,16 @@ export function Botao({
       return (
         <button
           onClick={() => limparMemoria({ setEstado })}
+          className={`estilo-${estilo}`}
+        >
+          {valor}
+        </button>
+      );
+
+    case "CE":
+      return (
+        <button
+          onClick={() => limparArrayDaMemoria({estado, setEstado })}
           className={`estilo-${estilo}`}
         >
           {valor}

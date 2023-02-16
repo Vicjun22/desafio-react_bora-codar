@@ -3,6 +3,13 @@ export function adicionarDigito({ valor, estado, setEstado }) {
       return;
     }
 
+    if (estado?.valores[0].toString().length > 5) {
+      return;
+    }
+
+    // console.log(estado?.valores[0].toString().length > 5)
+    // console.log(estado)
+
     const limparDisplay = (estado?.valorNoDisplay === "0" && valor !== ",") || estado?.limparDisplay;
     const valorAtual = limparDisplay ? "" : estado.valorNoDisplay;
     const valorNoDisplay = valorAtual + valor;

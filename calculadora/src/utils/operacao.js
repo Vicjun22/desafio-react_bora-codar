@@ -36,15 +36,6 @@ export function operacao({ valor, estado, setEstado }) {
         valor[1] = 0;
         break;
 
-      // case "porcentagem":
-      //     valor[0] = eval(`${valor[0]} + ${valor[1]}`)
-      //     valor[1] = 0
-
-      case "maisMenos":
-        valor[0] = valor[0] * -1;
-        valor[1] = 0;
-        break;
-
       default:
         setEstado({ ...estadoInicial });
     }
