@@ -19,21 +19,33 @@ export function operacao({ valor, estado, setEstado }) {
       case "somar":
         valor[0] = valor[0] + valor[1];
         valor[1] = 0;
+        if ( valor[0].toString().length > 10) {
+          return setEstado({ ...estado, valorNoDisplay: "MAX"})
+        }
         break;
 
       case "subtrair":
         valor[0] = valor[0] - valor[1];
         valor[1] = 0;
+        if ( valor[0].toString().length > 10) {
+          return setEstado({ ...estado, valorNoDisplay: "MAX"})
+        }
         break;
 
       case "multiplicar":
         valor[0] = valor[0] * valor[1];
         valor[1] = 0;
+        if ( valor[0].toString().length > 10) {
+          return setEstado({ ...estado, valorNoDisplay: "MAX"})
+        }
         break;
 
       case "dividir":
         valor[0] = valor[0] / valor[1];
         valor[1] = 0;
+        if ( valor[0].toString().length > 10) {
+          return setEstado({ ...estado, valorNoDisplay: "MAX"})
+        }
         break;
 
       default:
@@ -43,7 +55,7 @@ export function operacao({ valor, estado, setEstado }) {
     setEstado({
       valorNoDisplay: valor[0],
       limparDisplay: !"igual",
-      operacao: "igual" ? null : operacao,
+      operacao: "igual" ? "igual" : operacao,
       valores: [valor[0], valor[1]],
       arrayAtual: 0,
     });

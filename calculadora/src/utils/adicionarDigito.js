@@ -3,14 +3,19 @@ export function adicionarDigito({ valor, estado, setEstado }) {
       return;
     }
 
-    if (estado?.valores[0].toString().length > 5) {
+    if (estado?.valores[0].toString().length > 8 && estado?.arrayAtual === 0) {
+      return;
+    } else if (estado?.valores[1].toString().length > 8) {
       return;
     }
+    
+    if (estado?.valores[0].toString().length > 10) {
+      return setEstado({ ...estado, valorNoDisplay: "MAX"})
+    }
 
-    // console.log(estado?.valores[0].toString().length > 5)
-    // console.log(estado)
+    const limparDisplay = (estado?.valorNoDisplay === "0" || estado?.valorNoDisplay === (-0) && valor !== ",") 
+        || estado?.limparDisplay;
 
-    const limparDisplay = (estado?.valorNoDisplay === "0" && valor !== ",") || estado?.limparDisplay;
     const valorAtual = limparDisplay ? "" : estado.valorNoDisplay;
     const valorNoDisplay = valorAtual + valor;
 

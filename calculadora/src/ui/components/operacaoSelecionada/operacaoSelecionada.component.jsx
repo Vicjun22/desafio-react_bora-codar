@@ -56,6 +56,11 @@ export function OperacaoSelecionada({ estado }) {
       );
 
     default:
-      return <span> </span>;
-  }
+      return (
+        <img
+          src={Equals}
+          alt={operacao}
+          className="img-operacao-selecionada"
+        />
+      );  }
 }

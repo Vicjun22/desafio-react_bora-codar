@@ -22,7 +22,7 @@ export function AreaDisplay({ estado }) {
   return (
     <div className="area-display">
       <div className="area-calculo">
-        {estado?.valores[0] || null}{" "}
+        {estado?.valores[0] || 0}{" "}
         {operacaoSelecionada}{" "}
         {operacaoSelecionada ? estado?.valores[1] || null : null}
       </div>
