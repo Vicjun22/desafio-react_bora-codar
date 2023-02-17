@@ -1,0 +1,20 @@
+*, *::after, *::before { 
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Lato', sans-serif;
+  color: #271A45;
+
+  background: #D9CDF7;
+}
