@@ -1,0 +1,47 @@
+.area-informacoes {
+    width: 50%;
+    height: 100;
+    padding: 50px;
+
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.codigo-do-produto {
+    font-weight: 300;
+}
+
+.nome-do-produto {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 600;
+}
+
+.preco-do-produto {
+    font-weight: 400;
+    filter: opacity(0.8);
+}
+
+.botao-add-carrinho {
+    padding: 10px 20px;
+
+    font-weight: 400;
+    color: #271A45;
+
+    cursor: pointer;
+
+    border: 1px solid #271A45;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.botao-add-carrinho:hover {
+    background-color: #aca1c7;
+}
+
+.botao-add-carrinho:active {
+    background-color: #9083b3;
+}

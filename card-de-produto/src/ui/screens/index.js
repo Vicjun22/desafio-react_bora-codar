@@ -1,0 +1,1 @@
+export { Produto } from "./produto/produto.screen";
