@@ -1,0 +1,1 @@
+export { BotoesECursores } from "./botoesECursores/botoesECursores.screen";
