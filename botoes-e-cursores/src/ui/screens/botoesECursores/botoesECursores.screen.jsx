@@ -1,10 +1,22 @@
 import "./botoesECursores.style.css";
 
+import { AreaBotoes, AreaTestes } from "../../components";
+
+import { useState } from 'react';
+
 export function BotoesECursores() {
 
-    return(
-        <div>
+    const [tipoBotao, setTipoBotao] = useState("default");
 
-        </div>
+    return(
+        <>
+            <AreaBotoes 
+                tipoBotao={tipoBotao}
+                setTipoBotao={setTipoBotao}
+            />
+            <AreaTestes 
+                tipoBotao={tipoBotao}
+            />
+        </>
     )
 }

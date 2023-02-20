@@ -1,0 +1,12 @@
+.area-testes_container {
+    width: 25%;
+    height: 100%;
+    padding: 5%;
+
+    background-color: #130F1E;
+}
+
+.area-testes_descricao {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
