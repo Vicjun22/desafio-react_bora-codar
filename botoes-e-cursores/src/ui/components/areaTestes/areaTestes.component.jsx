@@ -1,6 +1,6 @@
 import "./areaTestes.style.css";
 
-export function AreaTestes() {
+export function AreaTestes({ tipoBotao }) {
   return (
     <div className="area-testes_container">
       <div>
@@ -8,6 +8,7 @@ export function AreaTestes() {
         <p className="area-testes_descricao">
           Interaja com os botões e observe a mudança de aparência e de cursores
         </p>
+        {tipoBotao}
       </div>
     </div>
   );

@@ -1,6 +1,68 @@
 .tabela-botoes_content {
     height: 85%;
+    padding: 20px;
 
     border-radius: 15px;
     background: #1C162C;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+table thead {
+    height: 10%;
+}
+
+table tbody {
+    height: 90%;
+}
+
+table th {
+    font-weight: 400;
+}
+
+.btn-bg-area {
+    background-color: #0B0911;
+}
+
+.btn {
+    padding: 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #683ad3;
+    border-radius: 20px;
+    background: #8257E5;
+}
+
+.btn img {
+    text-align: center;
+}
+
+.btn-sec {
+    border: 1px solid #352f46;
+    background: #3C3748;
+}
+
+.btn-ter {
+    border: none;
+    background: transparent;
+}
+
+.btn-hover {
+    background: #9674E5;
+}
+
+.btn-sec-hover {
+    background: #6A617F;
+}
+
+.btn-foc {
+    border: 2px solid #FFFFFF;
+}
+
+.btn-disabled {
+    filter: brightness(0.6);
 }

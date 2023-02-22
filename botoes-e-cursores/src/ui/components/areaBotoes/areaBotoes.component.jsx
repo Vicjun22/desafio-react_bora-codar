@@ -1,7 +1,7 @@
 import { TabelaBotoes } from "../tabelaBotoes/tabelaBotoes.component";
 import "./areaBotoes.style.css";
 
-export function AreaBotoes({ tipoBotao, setTipoBotao }) {
+export function AreaBotoes({ setTipoBotao }) {
   return (
     <div className="area-botoes_container">
       <div className="area-botoes_content">
@@ -12,7 +12,7 @@ export function AreaBotoes({ tipoBotao, setTipoBotao }) {
         </p>
       </div>
 
-      <TabelaBotoes tipoBotao={tipoBotao} setTipoBotao={setTipoBotao} />
+      <TabelaBotoes setTipoBotao={setTipoBotao} />
     </div>
   );
 }

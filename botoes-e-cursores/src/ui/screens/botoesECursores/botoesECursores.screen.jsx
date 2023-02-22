@@ -11,7 +11,6 @@ export function BotoesECursores() {
     return(
         <>
             <AreaBotoes 
-                tipoBotao={tipoBotao}
                 setTipoBotao={setTipoBotao}
             />
             <AreaTestes 
