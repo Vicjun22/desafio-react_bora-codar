@@ -37,10 +37,6 @@ table th {
     background: #8257E5;
 }
 
-.btn img {
-    text-align: center;
-}
-
 .btn-sec {
     border: 1px solid #352f46;
     background: #3C3748;
@@ -52,11 +48,7 @@ table th {
 }
 
 .btn-hover {
-    background: #9674E5;
-}
-
-.btn-sec-hover {
-    background: #6A617F;
+    filter: brightness(130%)
 }
 
 .btn-foc {

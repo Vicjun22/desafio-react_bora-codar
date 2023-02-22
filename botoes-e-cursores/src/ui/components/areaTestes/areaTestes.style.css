@@ -10,3 +10,65 @@
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
 }
+
+.area-testes_btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px
+}
+
+.button {
+    padding: 15px 40px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #683ad3;
+    border-radius: 20px;
+    background: #8257E5;
+}
+
+.button-sec {
+    border: 1px solid #352f46;
+    background: #3C3748;
+}
+
+.button-tert {
+    border: none;
+    background: transparent;
+}
+
+.default:active {
+    filter: opacity(0.8);
+}
+
+.hover:hover {
+    filter: brightness(130%)
+}
+
+.focus {
+    border: 2px solid #FFFFFF;
+}
+
+.loading:active {
+    cursor: wait;
+    filter: opacity(0.8);
+}
+
+.movable:active {
+    cursor: move;
+    filter: opacity(0.8);
+}
+
+.disabled {
+    cursor: not-allowed;
+    filter: brightness(0.6);
+}
+
+.area-testes_tipo {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -62,7 +62,7 @@ export function TabelaBotoes({ setTipoBotao }) {
           <td className="btn-bg-area">
             <button
               onClick={() => setTipoBotao("hover")}
-              className="btn btn-sec btn-sec-hover"
+              className="btn btn-sec btn-hover"
             >
               HOVER SECONDARY
             </button>
