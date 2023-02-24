@@ -3,7 +3,7 @@ import { AreaInformacoes } from "../../components/areaInformacoes/areaInformacoe
 import "./produto.style.css";
 
 export function Produto({ produto }) {
-    console.log(produto)
+  
     return (
         <>
           <AreaImagem produto={produto} />
