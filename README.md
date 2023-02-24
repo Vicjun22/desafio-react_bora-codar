@@ -8,3 +8,6 @@ ___
 </br>
 
 Sintam-se à vontade para clonar o projeto e sujerir pontos de melhorias.
+
+#boraCodar | Desafio | Link
+2 | Card de Produto | https://github.com/Vicjun22/react-bora-codar/tree/main/card-de-produto
