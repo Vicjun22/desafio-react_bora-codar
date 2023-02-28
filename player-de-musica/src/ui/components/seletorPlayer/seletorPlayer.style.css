@@ -1,0 +1,48 @@
+.tipo_player {
+    width: 150px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    position: fixed;
+    top: 50px;
+    right: 50px;
+
+    border-radius: 10px;
+    background: #2A2141;
+}
+
+.tipo_player_coluna {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seletor_player {
+    cursor: pointer;
+    border-radius: 10px;
+    background: #8b79bb;
+}
+
+.seletor_player:hover {
+    filter: opacity(0.6);
+}
+
+.tipo-1 {
+    width: 50px;
+    height: 80px;
+}
+
+.tipo-2 {
+    width: 70px;
+    height: 45px;
+}
+
+.tipo-3 {
+    width: 70px;
+    height: 30px;
+}
