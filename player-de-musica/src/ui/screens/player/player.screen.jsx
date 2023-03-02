@@ -13,10 +13,10 @@ export function Player() {
       
       <TipoReprodutor seletor={seletor} />
 
-      <audio controls>
+      {/* <audio controls>
         <source src={Music} type="audio/ogg" />
         Your browser does not support the audio element.
-      </audio>
+      </audio> */}
     </div>
   );
 }
