@@ -1,5 +1,7 @@
 import "./tipoReprodutor.style.css";
 
+import { PlayerButton } from "../index.js";
+
 export function TipoReprodutor({ seletor }) {
   const reprodutor = {
     1: [
@@ -44,6 +46,8 @@ export function TipoReprodutor({ seletor }) {
             .width
         }}
         className="player-style"
-      ></div>
+      >
+      <PlayerButton />
+      </div>
   );
 }

@@ -1,0 +1,9 @@
+.player_button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.player_button:active {
+    background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(42, 33, 65, 0) 100%);
+}
