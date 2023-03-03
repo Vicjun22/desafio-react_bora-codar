@@ -36,7 +36,6 @@ export function TipoReprodutor({ seletor }) {
 
 
   return (
-    <>
       <div
         style={{
           height: reprodutor[seletor].find((reprodutor) => reprodutor.width)
@@ -46,6 +45,5 @@ export function TipoReprodutor({ seletor }) {
         }}
         className="player-style"
       ></div>
-    </>
   );
 }

@@ -12,11 +12,6 @@ export function Player() {
       <SeletorPlayer setSeletor={setSeletor} />
       
       <TipoReprodutor seletor={seletor} />
-
-      {/* <audio controls>
-        <source src={Music} type="audio/ogg" />
-        Your browser does not support the audio element.
-      </audio> */}
     </div>
   );
 }
