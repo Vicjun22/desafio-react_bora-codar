@@ -51,11 +51,17 @@ export function TipoReprodutor({ seletor }) {
     >
       {seletor === 1 ? (
         <>
-        <img src={reprodutor[seletor].imagem} />
+        <img style={{ width: "200px"}} src={reprodutor[seletor].imagem} alt="Imagem Álbum" />
         
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "space-evenly"}}>
+        <div style={{ width: "200px", display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "space-evenly"}}>
           <h2>{reprodutor[seletor].titulo}</h2>
           <h3 style={{ filter: "opacity(0.7)", fontWeight: "normal"}}>{reprodutor[seletor].autor}</h3>
+        </div>
+
+        <div style={{ width: "200px", height: "10px", background: "#D9D9D9", opacity: "0.3", borderRadius: "20px" }}>
+          <div style={{ width: "10%", height: "100%", background: "#D9D9D9", opacity: "0.8", borderRadius: "20px" }}>
+
+          </div>
         </div>
 
         </>
@@ -67,7 +73,7 @@ export function TipoReprodutor({ seletor }) {
             justifyContent: "space-evenly"
           }}
         >
-          <img src={reprodutor[seletor].imagem} style={{ width: "120px" }} />
+          <img src={reprodutor[seletor].imagem} style={{ width: "120px" }} alt="Imagem Álbum" />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "space-evenly" }}>
             <h2>{reprodutor[seletor].titulo}</h2>
             <h3 style={{ filter: "opacity(0.7)", fontWeight: "normal"}}>{reprodutor[seletor].autor}</h3>
