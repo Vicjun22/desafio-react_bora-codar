@@ -60,7 +60,7 @@ export function TipoReprodutor({ seletor }) {
 
         <div style={{ width: "200px", height: "10px", background: "#D9D9D9", opacity: "0.3", borderRadius: "20px" }}>
           <div style={{ width: "10%", height: "100%", background: "#D9D9D9", opacity: "0.8", borderRadius: "20px" }}>
-
+1
           </div>
         </div>
 
