@@ -6,7 +6,20 @@ import Wallpaper from "../../../assets/img/img.svg";
 
 export function TipoReprodutor({ seletor }) {
   const tempoTotalDaMusica = 212;
-  const tempoPercorridoDaMusica = 200;
+  const tempoPercorridoDaMusica = 150;
+
+  function conversorSegundosEmTempo(tempoEmSegundos) {
+    const dateObj = new Date(tempoEmSegundos * 1000);
+    const minutos = dateObj.getUTCMinutes();
+    const segundos = dateObj.getSeconds();
+
+    const tempoEmString =
+      minutos.toString().padStart(2, "0") +
+      ":" +
+      segundos.toString().padStart(2, "0");
+
+    return tempoEmString;
+  }
 
   const reprodutor = {
     1: {
@@ -72,10 +85,40 @@ export function TipoReprodutor({ seletor }) {
 
       <PlayerButton />
 
-      <div style={{ width: "100%", height: "10px", borderRadius: "20px", overflow: "hidden", position: "relative" }}>
-        <div style={{ width: "100%", height: "100%", background: "#D9D9D9", opacity: "0.3", position: "absolute" }}></div>
-        <div style={{ width: "50%", height: "100%", background: "#D9D9D9", opacity: "0.8", position: "absolute" }}></div>
+      <div
+        style={{
+          width: "100%",
+          height: "10px",
+          borderRadius: "20px",
+          overflow: "hidden",
+          position: "relative",
+        }}
+      >
+        <div style={{ width: "100%", height: "100%", background: "#D9D9D9", opacity: "0.3", position: "absolute" }} >
+        </div>
+        <div style={{ width: `${(reprodutor[seletor].tempoPercorrido * 100) / reprodutor[seletor].tempoTotal}%`, height: "100%",
+            background: "#D9D9D9", opacity: "0.8", position: "absolute", }} >
+        </div>
       </div>
+
+      {seletor !== 3 ? (
+        <div
+          style={{
+            width: "100%",
+            height: "10px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <p style={{ height: "100%" }}>
+            {conversorSegundosEmTempo(reprodutor[seletor].tempoPercorrido)}
+          </p>
+          <p style={{ height: "100%" }}>
+            {conversorSegundosEmTempo(reprodutor[seletor].tempoTotal)}
+          </p>
+        </div>
+      ) : null}
     </div>
   );
 }
