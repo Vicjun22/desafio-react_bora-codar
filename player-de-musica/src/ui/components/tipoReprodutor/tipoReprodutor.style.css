@@ -26,3 +26,31 @@
     opacity: 0.8;
     border-radius: 10px;
 }
+
+.reprodutor-tipo_2, .reprodutor-tipo_3 {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.reprodutor-tipo_1-info {
+    width: 100%;
+    height: 20%;
+
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.reprodutor-tipo_2-info, .reprodutor-tipo_3-info {
+    width: 75%;
+    padding-left: 20px;
+    font-size: larger;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

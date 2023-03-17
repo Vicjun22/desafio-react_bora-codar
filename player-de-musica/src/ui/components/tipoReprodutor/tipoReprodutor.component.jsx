@@ -63,24 +63,17 @@ export function TipoReprodutor({ seletor }) {
       }}
       className="player-style"
     >
-      <img
-        style={seletor === 1 ? { width: "100%" } : { width: "100px" }}
-        src={reprodutor[seletor].imagem}
-        alt="Imagem Álbum"
-      />
+      <div className={`reprodutor-tipo_${seletor}`} >
+        <img
+          style={seletor === 1 ? { width: "100%" } : { width: "25%" }}
+          src={reprodutor[seletor].imagem}
+          alt="Imagem Álbum"
+        />
 
-      <div
-        style={{
-          width: "100%",
-          height: "20%",
-          textAlign: "start",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <h3>{reprodutor[seletor].titulo}</h3>
-        <p>{reprodutor[seletor].autor}</p>
+        <div className={`reprodutor-tipo_${seletor}-info`} >
+          <h3>{reprodutor[seletor].titulo}</h3>
+          <p>{reprodutor[seletor].autor}</p>
+        </div>
       </div>
 
       <PlayerButton />
