@@ -94,6 +94,8 @@ export function TipoReprodutor({ seletor }) {
         </div>
       </div>
 
+      {/* <input className="time_progress" type="range" max="100%" value={(reprodutor[seletor].tempoPercorrido * 100) / reprodutor[seletor].tempoTotal} /> */}
+
       {seletor !== 3 ? (
         <div
           style={{
