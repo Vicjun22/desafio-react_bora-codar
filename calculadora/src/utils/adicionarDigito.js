@@ -13,7 +13,7 @@ export function adicionarDigito({ valor, estado, setEstado }) {
       return setEstado({ ...estado, valorNoDisplay: "MAX"})
     }
 
-    const limparDisplay = (estado?.valorNoDisplay === "0" || estado?.valorNoDisplay === (-0) && valor !== ",") 
+    const limparDisplay = ((estado?.valorNoDisplay === "0") || ((estado?.valorNoDisplay === (-0)) && valor !== ",")) 
         || estado?.limparDisplay;
 
     const valorAtual = limparDisplay ? "" : estado.valorNoDisplay;

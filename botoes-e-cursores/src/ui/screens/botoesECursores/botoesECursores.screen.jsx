@@ -1,5 +1,3 @@
-import "./botoesECursores.style.css";
-
 import { AreaBotoes, AreaTestes } from "../../components";
 
 import { useState } from 'react';

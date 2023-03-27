@@ -1,4 +1,4 @@
-import './App.css';
+import './app.css';
 
 import { Calculadora } from "./ui/screens/index";
 
