@@ -1,0 +1,1 @@
+export { Home } from "./setName/home.screen";

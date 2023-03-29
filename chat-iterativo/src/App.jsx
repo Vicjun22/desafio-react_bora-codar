@@ -1,10 +1,12 @@
 import './App.css'
 
+import { Home } from './ui/screens';
+
 export function App() {
 
   return (
-    <div className="App">
-
+    <div className="app">
+      <Home />
     </div>
   )
 }
