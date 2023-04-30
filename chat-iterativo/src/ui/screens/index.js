@@ -1,1 +1,2 @@
-export { Home } from "./setName/home.screen";
+export { Home } from "./home/home.screen";
+export { Chat } from "./chat/chat.screen";

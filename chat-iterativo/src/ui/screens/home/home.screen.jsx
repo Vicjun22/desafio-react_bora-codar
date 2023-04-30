@@ -1,4 +1,5 @@
 import './home.style.css';
+
 import { useState } from 'react';
 
 export function Home() {
@@ -18,7 +19,6 @@ export function Home() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Faz alguma ação quando o formulário é enviado
   };
 
   return (
@@ -35,8 +35,10 @@ export function Home() {
             handleInputBlur(event, 'Digite seu nome aqui')
           }
           onChange={(e) => setMyName(e.target.value)}
+          required
         />
       </label>
+
       <label className="home-label">
         Digite o nome de seu amigo:
         <input
@@ -49,8 +51,10 @@ export function Home() {
             handleInputBlur(event, 'Digite o nome de seu amigo aqui')
           }
           onChange={(e) => setFriendsName(e.target.value)}
+          required
         />
       </label>
+
       <button className="home-btn" type="submit">
         Iniciar Chat
       </button>
